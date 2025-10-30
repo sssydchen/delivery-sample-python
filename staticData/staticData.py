@@ -1,6 +1,6 @@
 from models.store import Store
 from models.distanceMap import DistanceMap
-from models.product import Item, Category 
+from models.item import Item, Category 
 
 DISTANCE_MAP = {
     DistanceMap("ZoneA", "ZoneA", 0),

@@ -6,6 +6,7 @@ DISTANCE_MAP = {
     DistanceMap("ZoneA", "ZoneA", 0),
     DistanceMap("ZoneA", "ZoneB", 3),
     DistanceMap("ZoneA", "ZoneC", 6),
+    DistanceMap("ZoneB", "Zonec", 3),
     DistanceMap("ZoneB", "ZoneB", 0),
     DistanceMap("ZoneC", "ZoneC", 0)
 }

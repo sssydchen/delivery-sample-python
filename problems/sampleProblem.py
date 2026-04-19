@@ -1,19 +1,19 @@
+from services.pricing_service import PricingService
+
 
 class SampleProblem:
+    def __init__(self):
+        self.pricing_service = PricingService()
+
     def calculate_cost(self, distance):
-        if distance <= 0:
-            raise ValueError("Distance must be greater than 0")
-        base_cost = 50.0
-        if distance <= 5:
-            return base_cost
-        else:
-            extra_distance = distance - 5
-            return base_cost + (extra_distance * 10)
+        return self.pricing_service.calculate_delivery_fee(distance)
+
 
 def main():
     sample = SampleProblem()
     result = sample.calculate_cost(8)
     print(result)
+
 
 if __name__ == "__main__":
     main()

@@ -9,6 +9,10 @@ class Customer:
     tier: LoyaltyTier
     loyaltyPoints: int = 0 
 
+    def add_loyalty_points(self, points: int) -> None:
+        if points < 0:
+            raise ValueError("Loyalty points cannot be negative")
 
+        self.loyaltyPoints += points
 
     
